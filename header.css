@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkred;
+    background-image: url(https://t3.ftcdn.net/jpg/00/84/55/66/360_F_84556601_W71hd1xmCxZUhsscyNlokY1an7Kqx6ZJ.jpg);
+}
+
+header{
+    background-color: rgb(233, 158, 158);
+ font-family: 'Helvetica';
+ text-align: center;
+ font-weight: bolder;
+ font-size: xx-large;
+ color: darkred;
+ margin-bottom: 5px;
+ display: flex;
+ padding:15px;
+}
+
+.login {
+        padding: 20px 20px;
+        background-color: #fff;
+        color: #333;
+        border-radius: 5px;
+        }
+
+        .center {   
+            flex-grow: 1;
+            text-align: center;
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            }
+        
+            .center a{
+                padding: 8px 8px 8px 32px;
+              text-decoration: none;
+              font-size: 25px;
+              color: darkred;
+              display: block;
+              transition: 0.3s;
+            }
+            
+            .center a:hover {
+                color: #f1f1f1;
+            }
+            
+        .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .centerimg{
+            display:inline-block;
+            margin:0 auto;
+        }
+            
+         
+            #loginButton {
+            background-color: #ff990000;
+            color: darkred;
+            border: darkred;
+            padding: 20px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            display:flex;
+            font-size: large;
+            font-weight: bold;
+            }
+            
+           
+.popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+        display: none;
+}
+
+.footer{
+    left:0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkred;
+    color: white;
+    font-size: medium;
+    font-weight: lighter;
+    display:flex;
+}
+
+.left{
+    align-items: left;
+    display:inline-block;
+    width:50%;
+}
+
+.rightfooter{
+    align-items: flex-end;
+    flex-direction: column;
+    display: inline-flex;
+    width:50%;
+}

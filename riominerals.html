@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="menu.css" rel="stylesheet" type="text/css">
+    <link href="header.css" rel="stylesheet" typer="text/css">
+    <link href="popupform.css" rel="stylesheet" typer="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+    <span style="font-size:30px;cursor:pointer" 
+      onclick="openMenu()">&#9776; 
+    </span> 
+
+    <div id="mySidenav" class="menu">
+        <a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
+        <a href="all.html">All</a>
+        <a href="dogs.html">Dogs</a>
+        <a href="cats.html">Cats</a>
+        <a href="birds.html">Birds</a>
+        <a href="questionnaire.html">Feedback (optional)</a>
+    </div>
+
+    <div class="center">
+        <a href="index.html">Pet Shop Nodi</a>
+    </div>
+
+    <img src="paw.png" alt="Dog" width="45" height="45" class="centerimg"/>
+
+    <div class="right">
+        <button id="cartbtn">Shopping Cart<span id="cart-count">0</span></button>
+    </div>
+</header>
+
+<div class="productpage">
+    <div class="imgproduct">
+        <img src="riovitmin.png" alt="RIO Vitamin and mineral pellets for budgies and parakeets" style="width: 374px; height: 552.88;">
+    </div>
+    <div class="description">
+      <h1>RIO Vitamin and mineral pellets for budgies and parakeets</h1>
+      <p>RIO vitamin and mineral pellets include a special complex of essential vitamins, micro- and macro elements for ultimate nutrition and health of birds. When used on a daily basis, the complex eliminates the symptoms and adverse effects of an unbalanced diet. It hepls to support immune system, improve eye sight, skin condition and plumage.</p>
+      <p>Price: $7.00</p>
+      <button class="likebtn" id="likeb" onclick="likes()">Like</button>
+      <div class="comments">
+        <form method="post" action=#>
+        <h3>Reviews:</h3>
+        <input id="value"><input type="button" value="Submit" onClick="getV()">
+        <p id="x"></p><br>
+        </form>
+      </div>
+      <div>
+        <button class="add-to-cart addbtn">Add to Cart</button>
+        <br>
+        <button class="addbtn" onclick="redirect2()">Leave feedback</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <script>
+  function getV(){
+    document.getElementById("x").innerHTML = document.getElementById("value").value;
+}
+  </script>
+
+<div class="footer">
+    <div class="left">
+        <br>
+        A one-stop-shop for all your pet's needs, from food to toys and everything in between.
+        <br><br>
+        Bul. Vidoe Smilevski-Bato 63 - Skopje
+        <br> 
+            Phone number: 071440066
+        <br> 
+            petshopnodi@gmail.com
+    </div>
+        <div class="rightfooter">
+        <bold><br>
+            Follow us on: 
+            <br>
+        </bold>
+            <br> 
+            <a href="https://www.facebook.com/">Facebook</a>
+            <br> 
+            <a href="https://www.instagram.com/">Instagram</a> 
+            <br>
+        </div>
+</div>
+
+<script src="script.js"></script>
+<script src="openform.js"></script>
+<script src="redirect.js"></script>
+<script src="shoppingcart.js"></script>
+</body>
+</html>

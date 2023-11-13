@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="menu.css" rel="stylesheet" type="text/css">
+    <link href="header.css" rel="stylesheet" typer="text/css">
+    <link href="popupform.css" rel="stylesheet" typer="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+    <span style="font-size:30px;cursor:pointer" 
+      onclick="openMenu()">&#9776; 
+    </span> 
+
+    <div id="mySidenav" class="menu">
+        <a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
+        <a href="all.html">All</a>
+        <a href="dogs.html">Dogs</a>
+        <a href="cats.html">Cats</a>
+        <a href="birds.html">Birds</a>
+        <a href="questionnaire.html">Feedback (optional)</a>
+    </div>
+
+    <div class="center">
+        <a>Pet Shop Nodi</a>
+    </div>
+
+    <img src="paw.png" alt="Dog" width="45" height="45" class="centerimg"/>
+
+    <div class="right">
+        <button class="button" id="button" data-modal="modalOne" onclick="openForm()">Login</button>
+    </div>
+</header>
+
+<category>Impressions Questionnaire</category>
+
+<div class="question">
+<form action="" method="POST">
+    <h1>Please provide your feedback on the following questions:</h1>
+        
+    <b>1. What is your overall impression of the pet shop?</b>
+    <textarea name="impression" rows="3" cols="30"></textarea>
+        
+    <b>2. How would you rate the user interface of the website?</b>
+    <select name="rating" id="ratingg" single>
+        <option value="exellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="average">Average</option>
+        <option value="poor">Poor</option>
+    </select>
+        
+    <b>3. Did you find the website easy to navigate?</b>
+    <label>Yes</label>
+    <div class="i"><input type="radio"></div>
+    <label>No</label>
+    <div class="i"><input type="radio"></div>
+
+    <b>4. What improvements would you suggest for the pet shop?</b>
+    <textarea name="improvements" rows="3" cols="30"></textarea>
+        
+    <b>5. Would you recommend this pet shop to others?</b>
+    <label>Yes</label>
+    <div class="i"><input type="checkbox" name="recommendation" value="Yes"></div>
+    <label>No</label>
+    <div class="i"><input type="checkbox" name="recommendation" value="No"></div>
+
+    <br>
+    <button type="submit" onclick="thanks()">Submit</button>
+</form>
+</div>
+    
+<div class="footer">
+    <div class="left">
+        <br>
+        A one-stop-shop for all your pet's needs, from food to toys and everything in between.
+        <br><br>
+        Bul. Vidoe Smilevski-Bato 63 - Skopje
+        <br> 
+            Phone number: 071440066
+        <br> 
+            petshopnodi@gmail.com
+    </div>
+        <div class="rightfooter">
+        <bold><br>
+            Follow us on: 
+            <br>
+        </bold>
+            <br> 
+            <a href="https://www.facebook.com/">Facebook</a>
+            <br> 
+            <a href="https://www.instagram.com/">Instagram</a> 
+            <br>
+        </div>
+</div>
+
+<script src="script.js"></script>
+<script src="openform.js"></script>
+<script src="redirect.js"></script>
+</body>
+</html>

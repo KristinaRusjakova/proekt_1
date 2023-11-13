@@ -1,0 +1,135 @@
+category{
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkred;
+    text-decoration: underline;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.image-container img {
+    width: 333px;
+    cursor: pointer;
+}
+
+.image-container b{
+    text-align: center;
+}
+
+.image-container p {
+    text-align: center;
+}
+
+.textbox{
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+    border: darkred;
+    border-radius: 9px;
+    text-align: center;
+    border-style: solid;
+}
+
+italic{
+    font-style: italic;
+    text-decoration: wavy;
+    font-weight: bold;
+}
+
+bold{
+    color:white;
+}
+
+b{
+    color:darkred;
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: large;
+    font-weight: 900;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.productpage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.imgproduct{
+    width: 50%;
+    align-items: center;
+}
+
+.description{
+    width: 50%;
+    padding-left: 20px;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.likebtn{
+    background-color: #dc3545;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.likebtn.clicked{
+    background-color: lightgreen;
+}
+
+.question{
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.i div{
+    display: inline;
+}
+
+#cartbtn{
+    background-color: darkred;
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    cursor:pointer;
+    font-size: large;
+    font-weight: bold;
+}
+
+#cart-count{
+    background-color: white;
+    color: darkred;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: large;
+    font-weight: bold;
+}
+
+.addbtn{
+            background-color: darkred;
+            color: white;
+            border: darkred;
+            padding: 20px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            display:flex;
+            font-size: large;
+            font-weight: bold;
+}
